@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.env
+*.log
+```
+
+2. Update your form's redirect URL in index.html:
+````html
+// filepath: [index.html](http://_vscodecontentref_/0)
+<!-- Change this line in your form -->
+<input type="hidden" name="_next" value="https://your-domain.com/thanks.html">
