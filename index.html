@@ -190,30 +190,35 @@
 <section id="contact" class="section dark">
   <div class="container">
     <h2 class="fade-in">Contact Me</h2>
-    <form id="contactForm" class="fade-in" action="https://formsubmit.co/joshjorda48@gmail.com" method="POST">
-      <!-- Prevent spam -->
-      <input type="hidden" name="_captcha" value="true">
-      
-      <!-- Redirect -->
-      <input type="hidden" name="_next" value="thanks.html">
-      
-      <!-- Template -->
-      <input type="hidden" name="_template" value="table">
-      
-      <!-- Subject -->
-      <input type="hidden" name="_subject" value="New Contact Form Submission">
-      
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <textarea name="message" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
+   <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Add your access key -->
+    <input type="hidden" name="access_key" value="563dfa60-c0bb-419e-a870-54d37476403a">
+    
+    <!-- Add metadata -->
+    <input type="hidden" name="from_name" value="Marc Thomas Photography">
+    <input type="hidden" name="subject" value="New Photography Inquiry">
+    <input type="hidden" name="replyto" value="your-email@domain.com">
+    
+    <!-- Form fields with proper labels -->
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    </div>
+    
+    <!-- Spam protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+    <button type="submit" class="submit-btn">Send Message</button>
+</form>
+
   </div>
 </section>
 
@@ -287,23 +292,7 @@
   }, observerOptions);
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const submitBtn = document.querySelector('.submit-btn');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.style.background = 'var(--gradient-2)';
-    setTimeout(() => {
-      submitBtn.textContent = 'Message Sent!';
-      submitBtn.style.background = 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)';
-      this.reset();
-      setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.style.background = 'var(--gradient-1)';
-      }, 3000);
-    }, 2000);
-  });
-
+ 
   window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
@@ -331,6 +320,8 @@
     'wrapAround': true,
     'fadeDuration': 300
   });
+
+ 
 </script>
 
 <!-- Modern Welcome Popup -->
