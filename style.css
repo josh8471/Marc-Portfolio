@@ -793,7 +793,7 @@ header {
     z-index: 3; /* Increased z-index to appear above background */
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     animation: floatProfile 3s ease-in-out infinite;
-background-image: url("../images/IMG_5227.jpeg");
+background-image: url("../optimized-images#/IMG_5227.jpeg");
 }
 
 @keyframes floatProfile {
