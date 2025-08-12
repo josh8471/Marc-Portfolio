@@ -793,7 +793,7 @@ header {
     z-index: 3; /* Increased z-index to appear above background */
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     animation: floatProfile 3s ease-in-out infinite;
-    background-image: url("https://scontent.fgau1-2.fna.fbcdn.net/v/t39.30808-6/495890094_1887911055310852_8735370479197891010_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LRgFCZrQwLcQ7kNvwEc7SV2&_nc_oc=AdmFzhL2rH-txB3tHaWV-xoxQGJarz5n2dMx_VU8nAb5PHQcjgMTnSTX8RZ9eDEADA-KyX4WEtIVWOPeIimX5FRP&_nc_zt=23&_nc_ht=scontent.fgau1-2.fna&_nc_gid=nKykHGhWBeYUF6xWxeZuVw&oh=00_AfRmeLIM_FN9fWfyj6Ofk2RvycTUOGB1TA-U7BC5YWhXXw&oe=6885C992");
+    background-image: url("/images/IMG_5227.jpeg");
 }
 
 @keyframes floatProfile {
