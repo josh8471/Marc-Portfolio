@@ -777,23 +777,27 @@ header {
       background: #ff8c5a;
     }
 
-    .profile-photo {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid var(--accent);
-    border-radius: 50%; 
-    overflow: hidden; 
-    width: 200px;
-    height: 200px; 
-    background: var(--secondary-bg);
-    background-size: cover;
-    background-position: center;
-    z-index: 3; /* Increased z-index to appear above background */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    animation: floatProfile 3s ease-in-out infinite;
-background-image: url("./images/IMG_5227.jpeg");
+  .profile-photo {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--accent);
+  border-radius: 50%; 
+  overflow: hidden; 
+  width: 200px;
+  height: 200px; 
+  z-index: 3;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  animation: floatProfile 3s ease-in-out infinite;
+  background: var(--secondary-bg); /* optional fallback */
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @keyframes floatProfile {
