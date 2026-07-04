@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marc Thomas | Photographer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <title>Black Blue Yellow | Adventure &amp; Lifestyle Photography</title>
+  <meta name="description" content="Black Blue Yellow — adventure, motorcycle, wedding and portrait photography. Capturing the ride, the light and the moments in between.">
+  <link rel="icon" type="image/png" href="images/logo-badge.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,8 +18,10 @@
 
 <header id="header">
   <div class="container">
-    <h1 class="logo">Marc Thomas</h1>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    <a href="#home" class="logo-wrap">
+      <img src="images/logo-badge.png" alt="Black Blue Yellow" class="logo-img">
+    </a>
+    <div class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</div>
     <nav>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
@@ -29,36 +35,32 @@
 </header>
 
 <section id="home" class="hero">
-  <div class="hero-background"></div>
-  <div class="floating-elements">
-    <div class="floating-element"></div>
-    <div class="floating-element"></div>
-    <div class="floating-element"></div>
- <div class="profile-photo">
-  <img src="images/pro.jpg" alt="Profile photo">
-</div>
-
-  <h2>Capturing Memories. Telling stories.</h2>
-  <p>Modern photography for timeless emotions.</p>
-  <div class="contact-info">
-    <a href="tel:+918073242345" class="phone-number">
-      <i class="fas fa-phone"></i> Schedule a Call
-    </a>
+  <div class="hero-background" role="img" aria-label="Motorcycle at a campsite at sunset"></div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-kicker">Motorcycling &middot; Photography &middot; Adventure</span>
+      <h1>Every road<br>tells a <span class="accent">story.</span></h1>
+      <p class="hero-sub">Adventure, wedding and portrait photography, shot on the road, in the wild, and everywhere in between.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary"><i class="fas fa-camera"></i> View My Work</a>
+        <a href="tel:+918073242345" class="btn btn-ghost"><i class="fas fa-phone"></i> Schedule a Call</a>
+      </div>
+    </div>
   </div>
+  <a href="#about" class="hero-scroll">Scroll</a>
 </section>
 
-
-
-
-
-<section id="about" class="section dark">
+<section id="about" class="section raised">
   <div class="container">
     <div class="about-grid">
       <div class="about-content fade-in">
-        <h2>About Me</h2>
-        <p class="tagline">Capturing Life's Beautiful Moments</p>
+        <div class="section-head">
+          <span class="section-eyebrow">01 &mdash; About</span>
+          <h2>Behind the lens</h2>
+        </div>
+        <p class="tagline">Capturing life's beautiful moments</p>
         <p class="description">
-          I'm MarthoBaba, a passionate photographer focused on capturing the emotion behind every moment. Whether it's weddings, portraits, or street photography — I create with purpose, bringing stories to life through the lens of creativity and technical excellence.
+          I'm the photographer behind Black Blue Yellow,  a rider and storyteller focused on the emotion inside every frame. Whether it's a mountain highway at dawn, a wedding, or a street portrait, I shoot with purpose: bringing stories to life through creativity and technical craft.
         </p>
         <div class="stats">
           <div class="stat-item">
@@ -77,109 +79,108 @@
         <div class="specialties">
           <h3>Specialties</h3>
           <div class="specialty-tags">
-            <span class="specialty">Wedding Photography</span>
-            <span class="specialty">Portrait Sessions</span>
-            <span class="specialty">Event Coverage</span>
-            <span class="specialty">Street Photography</span>
+            <span class="specialty">Adventure &amp; Moto</span>
+            <span class="specialty">Weddings</span>
+            <span class="specialty">Portraits</span>
+            <span class="specialty">Events</span>
+            <span class="specialty">Street</span>
           </div>
         </div>
       </div>
       <div class="about-image fade-in">
-        <img src="images/mar1.jpg" alt="Marc Thomas at work">
+        <img src="images/mar1.jpg" alt="The photographer at work" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<section id="portfolio" class="section light">
+<section id="portfolio" class="section">
   <div class="container">
-    <h2 class="fade-in">Portfolio</h2>
+    <div class="section-head fade-in">
+      <span class="section-eyebrow">02 &mdash; Portfolio</span>
+      <h2>Selected work</h2>
+      <p>A mix of rides, landscapes, weddings and everything the road put in front of the lens.</p>
+    </div>
     <div class="gallery">
-      <div class="gallery-item fade-in">
-        <a href="images/m3.jpg" data-lightbox="portfolio" data-title="Landscape">
-          <img src="images/m3.jpg" alt="Landscape Thumbnail">
+      <div class="gallery-item tall fade-in">
+        <a href="images/a7400086.jpg" data-lightbox="portfolio" data-title="Highway Ride">
+          <img src="images/a7400086.jpg" alt="Motorcyclists riding on a misty highway" loading="lazy">
+        </a>
+      </div>
+      <div class="gallery-item wide fade-in">
+        <a href="images/dsc3583.jpg" data-lightbox="portfolio" data-title="Campsite Sunset">
+          <img src="images/dsc3583.jpg" alt="Kawasaki Ninja at a campsite with silhouetted trees" loading="lazy">
         </a>
       </div>
       <div class="gallery-item fade-in">
         <a href="images/sce2.jpg" data-lightbox="portfolio" data-title="Wildlife">
-          <img src="images/sce2.jpg" alt="Wildlife Thumbnail">
+          <img src="images/sce2.jpg" alt="Wildlife photograph" loading="lazy">
         </a>
       </div>
       <div class="gallery-item fade-in">
-        <a href="images/butter.jpg" data-lightbox="portfolio" data-title="Street Art">
-          <img src="images/butter.jpg" alt="Street Art Thumbnail">
+        <a href="images/butter.jpg" data-lightbox="portfolio" data-title="Macro">
+          <img src="images/butter.jpg" alt="Butterfly macro photograph" loading="lazy">
         </a>
       </div>
       <div class="gallery-item fade-in">
-        <a href="images/flow.jpg" data-lightbox="portfolio" data-title="Portrait">
-          <img src="images/flow.jpg" alt="Portrait Thumbnail">
-        </a>
-      </div>
-      <!-- Added photos below -->
-      <div class="gallery-item fade-in">
-        <a href="images/m2.jpg" data-lightbox="portfolio" data-title="Wedding">
-          <img src="images/m2.jpg" alt="Wedding Thumbnail">
+        <a href="images/flow.jpg" data-lightbox="portfolio" data-title="Nature">
+          <img src="images/flow.jpg" alt="Flower photograph" loading="lazy">
         </a>
       </div>
       <div class="gallery-item fade-in">
-        <a href="images/pot2.jpg" data-lightbox="portfolio" data-title="Nature">
-          <img src="images/pot2.jpg" alt="Nature Thumbnail">
+        <a href="images/pot2.jpg" data-lightbox="portfolio" data-title="Still Life">
+          <img src="images/pot2.jpg" alt="Still life photograph" loading="lazy">
+        </a>
+      </div>
+      <div class="gallery-item wide fade-in">
+        <a href="images/sce33.jpg" data-lightbox="portfolio" data-title="Landscape">
+          <img src="images/sce33.jpg" alt="Landscape photograph" loading="lazy">
         </a>
       </div>
       <div class="gallery-item fade-in">
-        <a href="images/m.jpg" data-lightbox="portfolio" data-title="Urban">
-          <img src="images/m.jpg" alt="Urban Thumbnail">
+        <a href="images/sce3.jpg" data-lightbox="portfolio" data-title="Scenery">
+          <img src="images/sce3.jpg" alt="Scenic photograph" loading="lazy">
         </a>
       </div>
-      <div class="gallery-item fade-in">
-        <a href="images/sce33.jpg" data-lightbox="portfolio" data-title="Urban">
-          <img src="images/sce33.jpg" alt="Urban Thumbnail">
-        </a>
-      </div>
-
-       <div class="gallery-item fade-in">
-        <a href="images/sce3.jpg" data-lightbox="portfolio" data-title="Urban">
-          <img src="images/sce3.jpg" alt="Urban Thumbnail">
-        </a>
-      </div>
-
-
-
-
-
+    </div>
+    <div class="gallery-more fade-in">
+      <a href="works.html">View more work <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
-</section></div>
+</section>
 
-<section id="reviews" class="section light">
+<section id="reviews" class="section raised">
   <div class="container">
-    <h2 class="fade-in">Client Reviews</h2>
+    <div class="section-head fade-in">
+      <span class="section-eyebrow">03 &mdash; Reviews</span>
+      <h2>What clients say</h2>
+    </div>
     <div class="reviews-grid">
 
       <div class="review-card fade-in">
-        <div class="review-image image-1"></div>
-        <div class="review-content">
-          <h3>Josh</h3>
-          <div class="stars">★★★★★</div>
-          <p>I had a great time during the shoot. It was easygoing, and Marc helped me pose without making it feel awkward. The photos turned out better than I expected. I’ll definitely book again!</p>
+        <div class="stars">★★★★★</div>
+        <blockquote>I had a great time during the shoot. It was easygoing, and he helped me pose without making it feel awkward. The photos turned out better than I expected. I'll definitely book again!</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">J</div>
+          <span class="reviewer-name">Josh</span>
         </div>
       </div>
 
       <div class="review-card fade-in">
-        <div class="review-image image-2"></div>
-        <div class="review-content">
-          <h3>Richard Daimari</h3>
-          <div class="stars">★★★★★</div>
-          <p>We’re so glad we chose Marc for our wedding photos. He made us feel relaxed the whole day and captured every special moment perfectly. The photos are beautiful and something we’ll treasure forever.</p>
+        <div class="stars">★★★★★</div>
+        <blockquote>We're so glad we chose him for our wedding photos. He made us feel relaxed the whole day and captured every special moment perfectly. The photos are beautiful and something we'll treasure forever.</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">RD</div>
+          <span class="reviewer-name">Richard Daimari</span>
         </div>
       </div>
 
       <div class="review-card fade-in">
-        <div class="review-image image-3"></div>
-        <div class="review-content">
-          <h3>Didwm</h3>
-          <div class="stars">★★★★★</div>
-          <p>Marc captured the wedding of my girls so beautifully. Every smile, tear, and laugh was perfectly shot. Watching the photos feels like reliving the day all over again. He didn’t just take pictures — he told a story. We’re all so thankful for his amazing work!</p>
+        <div class="stars">★★★★★</div>
+        <blockquote>He captured the wedding of my girls so beautifully. Every smile, tear, and laugh was perfectly shot. Watching the photos feels like reliving the day all over again. He didn't just take pictures — he told a story.</blockquote>
+        <div class="reviewer">
+          <div class="reviewer-avatar">D</div>
+          <span class="reviewer-name">Didwm</span>
         </div>
       </div>
 
@@ -187,55 +188,60 @@
   </div>
 </section>
 
-
-<section id="contact" class="section dark">
+<section id="contact" class="section">
   <div class="container">
-    <h2 class="fade-in">Contact Me</h2>
-   <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-    <!-- Add your access key -->
-    <input type="hidden" name="access_key" value="b8c94ec9-f87c-47c6-918a-72a5d098d6b9">
-    
-    <!-- Add metadata -->
-    <input type="hidden" name="from_name" value="Marc Thomas Photography">
-    <input type="hidden" name="subject" value="New Photography Inquiry">
-    <input type="hidden" name="replyto" value="Marc@photo.com">
-    
-    <!-- Form fields with proper labels -->
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <div class="section-head fade-in">
+      <span class="section-eyebrow">04 &mdash; Contact</span>
+      <h2>Let's create together</h2>
     </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <div class="contact-grid">
+      <div class="contact-intro fade-in">
+        <p>Planning a shoot, a wedding, or a ride worth documenting? Tell me about it — I'll get back to you within a day.</p>
+        <a href="tel:+918073242345" class="contact-line"><i class="fas fa-phone"></i> +91 80732 42345</a>
+        <a href="https://www.instagram.com/snapsby_martho/" target="_blank" rel="noopener" class="contact-line"><i class="fab fa-instagram"></i> @snapsby_martho</a>
+        <a href="https://www.facebook.com/marc.thomas.373.3cc" target="_blank" rel="noopener" class="contact-line"><i class="fab fa-facebook"></i> Facebook</a>
+      </div>
+      <form id="contactForm" class="fade-in" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b8c94ec9-f87c-47c6-918a-72a5d098d6b9">
+        <input type="hidden" name="from_name" value="Black Blue Yellow Photography">
+        <input type="hidden" name="subject" value="New Photography Inquiry">
+        <input type="hidden" name="redirect" value="https://josh8471.github.io/Marc-Portfolio/thanks.html">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project" required></textarea>
+        </div>
+        <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-    </div>
-    
-    <!-- Spam protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-    
-    <button type="submit" class="submit-btn">Send Message</button>
-</form>
-
   </div>
 </section>
 
 <footer class="modern-footer">
   <div class="footer-content">
     <div class="footer-section">
-      <h3 class="footer-title">Marc Thomas</h3>
-      <p class="footer-description">Capturing moments, creating memories, and telling stories through the lens.</p>
+      <div class="footer-brand">
+        <img src="images/logo-badge.png" alt="Black Blue Yellow logo">
+        <h3 class="footer-title">Black Blue Yellow</h3>
+      </div>
+      <p class="footer-description">Motorcycling. Photography. Adventure. Capturing moments, creating memories, and telling stories through the lens.</p>
     </div>
-    
+
     <div class="footer-section">
       <h4>Quick Links</h4>
       <ul class="footer-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="works.html">More Works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -243,310 +249,35 @@
     <div class="footer-section">
       <h4>Connect</h4>
       <div class="social-links">
-        <a href="https://www.instagram.com/snapsby_martho/" target="_blank" class="social-icon">
+        <a href="https://www.instagram.com/snapsby_martho/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com/marc.thomas.373.3cc" target="_blank" class="social-icon">
+        <a href="https://www.facebook.com/marc.thomas.373.3cc" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
           <i class="fab fa-facebook"></i>
         </a>
-       
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2025 Marc Thomas Photography | All rights reserved</p>
+    <p>&copy; 2025 Black Blue Yellow Photography | All rights reserved</p>
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-<script>
-  const menuToggle = document.getElementById('menuToggle');
-  const navLinks = document.getElementById('navLinks');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-
-  const header = document.getElementById('header');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 100);
-  });
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-      navLinks.classList.remove('active');
-    });
-  });
-
-  const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, observerOptions);
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
- 
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    const floatingElements = document.querySelectorAll('.floating-element');
-    if (hero) hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    floatingElements.forEach((el, idx) => {
-      const speed = 0.2 + idx * 0.1;
-      el.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
-    });
-  });
-
-  document.addEventListener('mousemove', e => {
-    const mouseX = e.clientX / window.innerWidth;
-    const mouseY = e.clientY / window.innerHeight;
-    document.querySelectorAll('.floating-element').forEach((el, idx) => {
-      const speed = 10 + idx * 5;
-      const x = (mouseX - 0.5) * speed;
-      const y = (mouseY - 0.5) * speed;
-      el.style.transform += ` translate(${x}px, ${y}px)`;
-    });
-  });
-
-  lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'fadeDuration': 300
-  });
-
- 
-</script>
-
-<!-- Modern Welcome Popup -->
-<div id="welcomePopup" class="popup-overlay">
-  <div class="popup-content">
-    <div class="popup-header">
-      <span class="popup-emoji">📸</span>
-      <h2>Welcome to Marc Thomas Photography</h2>
-      <p class="popup-subtitle">Capturing Moments, Creating Memories</p>
-    </div>
-    <div class="popup-body">
-      <p>Looking for a professional photographer to capture your special moments?</p>
-    </div>
+<div id="welcomePopup" class="popup-overlay" hidden>
+  <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <img src="images/logo-badge.png" alt="" class="popup-logo">
+    <h2 id="popupTitle">Welcome to Black Blue Yellow</h2>
+    <p class="popup-subtitle">Motorcycling &middot; Photography &middot; Adventure</p>
+    <p class="popup-body">Looking for a photographer to capture your next ride, wedding or portrait session?</p>
     <div class="popup-buttons">
-      <button id="yesBtn">Let's Create Magic Together</button>
-      <button id="noBtn">Maybe Later</button>
+      <a href="#contact" class="btn btn-primary" id="popupCta">Let's Create Together</a>
+      <button type="button" class="btn btn-ghost" id="popupClose">Maybe Later</button>
     </div>
   </div>
 </div>
 
-<style>
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.popup-content {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(16px);
-  padding: 2.5rem;
-  border-radius: 20px;
-  text-align: center;
-  max-width: 450px;
-  width: 90%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  animation: popupSlideIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.popup-header {
-  margin-bottom: 1.5rem;
-}
-
-.popup-emoji {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-  animation: emojiWave 2s infinite;
-}
-
-.popup-content h2 {
-  color: #ffffff;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.popup-subtitle {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.popup-body {
-  margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.popup-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.popup-buttons button {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-#yesBtn {
-  background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
-  color: white;
-  flex: 2;
-  max-width: 250px;
-  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.2);
-}
-
-#noBtn {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  flex: 1;
-  max-width: 150px;
-}
-
-#yesBtn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(255, 107, 107, 0.3);
-}
-
-#noBtn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-3px);
-}
-
-@keyframes popupSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes emojiWave {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(-15deg); }
-  75% { transform: rotate(15deg); }
-}
-
-@keyframes popupFadeOut {
-  to {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-}
-
-.success-toast {
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(46, 213, 115, 0.95);
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  animation: toastFadeIn 0.3s ease;
-  box-shadow: 0 10px 30px rgba(46, 213, 115, 0.2);
-}
-
-@keyframes toastFadeIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 20px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
-
-@keyframes toastFadeOut {
-  to {
-    opacity: 0;
-    transform: translate(-50%, -20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .popup-content {
-    padding: 2rem;
-  }
-  
-  .popup-buttons {
-    flex-direction: column;
-  }
-  
-  #yesBtn, #noBtn {
-    max-width: 100%;
-  }
-}
-</style>
-
-<script>
-  window.addEventListener('load', () => {
-    const popup = document.getElementById('welcomePopup');
-    const yesBtn = document.getElementById('yesBtn');
-    const noBtn = document.getElementById('noBtn');
-
-    yesBtn.addEventListener('click', () => {
-      popup.style.animation = 'popupFadeOut 0.3s ease forwards';
-      setTimeout(() => {
-        const toast = document.createElement('div');
-        toast.className = 'success-toast';
-        toast.innerHTML = '🎉 Great choice! We\'ll contact you soon';
-        document.body.appendChild(toast);
-        popup.style.display = 'none';
-        
-        setTimeout(() => {
-          toast.style.animation = 'toastFadeOut 0.3s ease forwards';
-          setTimeout(() => toast.remove(), 300);
-        }, 3000);
-      }, 300);
-    });
-
-    noBtn.addEventListener('click', () => {
-      popup.style.animation = 'popupFadeOut 0.3s ease forwards';
-      setTimeout(() => popup.style.display = 'none', 300);
-    });
-  });
-</script>
-
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

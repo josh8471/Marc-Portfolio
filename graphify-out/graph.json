@@ -1,0 +1,18 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "script.js",
+      "file_type": "code",
+      "source_file": "/Users/josh/Marc-Portfolio/script.js",
+      "source_location": "L1",
+      "id": "users_josh_marc_portfolio_script_js",
+      "community": 0,
+      "norm_label": "script.js"
+    }
+  ],
+  "links": [],
+  "hyperedges": []
+}

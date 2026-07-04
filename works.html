@@ -3,64 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marc Thomas | Works</title>
+  <title>Black Blue Yellow | Works</title>
+  <link rel="icon" type="image/png" href="images/logo-badge.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
+  <header id="header">
     <div class="container">
-      <h1 class="logo">Marc Thomas</h1>
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo-badge.png" alt="Black Blue Yellow" class="logo-img">
+      </a>
+      <div class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</div>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="works.html" class="active">Works</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="section light">
+    <section class="section" style="padding-top: calc(var(--header-h) + 60px);">
       <div class="container">
-        <h2>My Works</h2>
+        <div class="section-head">
+          <span class="section-eyebrow">Archive</span>
+          <h2>More works</h2>
+          <p>Extended gallery — more frames from the road and beyond.</p>
+        </div>
         <div class="gallery">
-          <div class="gallery-item">
-            <a href="images/mar1.jpg" data-lightbox="works" data-title="Landscape">
-              <img src="images/mar1.jpg" alt="Landscape">
+          <div class="gallery-item tall">
+            <a href="images/mar1.jpg" data-lightbox="works" data-title="On Location">
+              <img src="images/mar1.jpg" alt="Photographer on location" loading="lazy">
             </a>
           </div>
           <div class="gallery-item">
-            <a href="images/mar2.jpg" data-lightbox="works" data-title="Wildlife">
-              <img src="images/mar2.jpg" alt="Wildlife">
+            <a href="images/mar2.jpg" data-lightbox="works" data-title="Portrait">
+              <img src="images/mar2.jpg" alt="Portrait photograph" loading="lazy">
             </a>
           </div>
           <div class="gallery-item">
-            <a href="images/mar3-large.jpg" data-lightbox="works" data-title="Street Art">
-              <img src="images/mar3-thumb.jpg" alt="Street Art">
+            <a href="images/pot.jpg" data-lightbox="works" data-title="Still Life">
+              <img src="images/pot.jpg" alt="Still life photograph" loading="lazy">
+            </a>
+          </div>
+          <div class="gallery-item wide">
+            <a href="images/sce.jpg" data-lightbox="works" data-title="Landscape">
+              <img src="images/sce.jpg" alt="Landscape photograph" loading="lazy">
             </a>
           </div>
           <div class="gallery-item">
-            <a href="images/mar4-large.jpg" data-lightbox="works" data-title="Portrait">
-              <img src="images/mar4-thumb.jpg" alt="Portrait">
+            <a href="images/pot3.jpg" data-lightbox="works" data-title="Detail">
+              <img src="images/pot3.jpg" alt="Detail photograph" loading="lazy">
             </a>
           </div>
-          <!-- Add more works as needed -->
+          <div class="gallery-item">
+            <a href="images/IMG_5227.jpeg" data-lightbox="works" data-title="Moments">
+              <img src="images/IMG_5227.jpeg" alt="Candid moment photograph" loading="lazy">
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Marc Thomas Photography | All rights reserved</p>
+  <footer class="modern-footer">
+    <div class="footer-bottom" style="margin-top: 0; border-top: none;">
+      <p>&copy; 2025 Black Blue Yellow Photography | All rights reserved</p>
+    </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'fadeDuration': 300
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
+</html>
